@@ -1,0 +1,35 @@
+= Sort By Field
+
+This plugin provides sorting by fields to arrays and enumerable objects. By default it is applied to arrays. It can be included in any enumerable class.
+
+It automatically handles nil values and sorting strings without case sensitivity.
+
+== Usage
+
+Sort the +values+ array by the value returned by the name attribute on each entry without case sentivity:
+
+  values.sort_by_field(:name)
+  
+Sort the +values+ array by the +name+ attribute on each entry with case sentivity:
+
+  values.sort_by_field(:name, :case_sensitive => true)
+
+Sort the +values+ array by the +name+ attribute putting nil values last instead of first:
+
+  values.sort_by_field(:name, :nil_last => true)
+
+Sort the +values+ array by the +name+ attribute and then by the +count+ attribute:
+
+  values.sort_by_field(:name, :count)
+
+Sort the +values+ array by the +name+ attribute in descending order:
+
+  values.sort_by_field("name desc")
+
+Sort the +values+ array by the name of the class of each entry:
+
+  values.sort_by_field("class.name")
+
+or
+
+  values.sort_by_field([:class, :name])
