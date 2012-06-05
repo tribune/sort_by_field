@@ -18,12 +18,12 @@ end
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "tribune-sort_by_field"
+    gem.name = "sort_by_field"
     gem.summary = %Q{Add ability to easily sort by entry attributes to Enumerables and Arrays}
     gem.description = %Q{Add ability to easily sort by entry attributes to Enumerables and Arrays.}
     gem.authors = ["Brian Durand"]
     gem.email = ["bdurand@tribune.com"]
-    gem.files = FileList["lib/**/*", "spec/**/*", "README.rdoc", "Rakefile", "TRIBUNE_CODE"].to_a
+    gem.files = FileList["lib/**/*", "spec/**/*", "README.rdoc", "Rakefile", "License.txt"].to_a
     gem.has_rdoc = true
     gem.rdoc_options << '--line-numbers' << '--inline-source' << '--main' << 'README.rdoc'
     gem.extra_rdoc_files = ["README.rdoc"]
