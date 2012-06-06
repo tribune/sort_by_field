@@ -22,7 +22,7 @@ begin
     gem.summary = %Q{Add ability to easily sort by entry attributes to Enumerables and Arrays}
     gem.description = %Q{Add ability to easily sort by entry attributes to Enumerables and Arrays.}
     gem.authors = ["Brian Durand"]
-    gem.email = ["bdurand@tribune.com"]
+    gem.email = ["mdobrota@tribune.com", "bdurand@tribune.com"]
     gem.files = FileList["lib/**/*", "spec/**/*", "README.rdoc", "Rakefile", "License.txt"].to_a
     gem.has_rdoc = true
     gem.rdoc_options << '--line-numbers' << '--inline-source' << '--main' << 'README.rdoc'
