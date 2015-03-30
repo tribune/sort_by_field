@@ -1,2 +1,7 @@
+Gemfile.lock
+*.swm
+*.swn
+*.swo
 *.swp
 *.gem
+pkg
